@@ -230,6 +230,10 @@ a:hover {
 	margin: 0 0 0 300px;
 }
 
+.content--prof {
+	background: url(../img/prof pic.svg);
+}
+
 .content--loading {
 	background: url(../img/loading.svg) no-repeat 50% 50%;
 }
