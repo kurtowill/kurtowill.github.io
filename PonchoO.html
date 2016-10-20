@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js wf-brandongrotesque-n7-active wf-brandongrotesque-n4-active wf-active"><!--<![endif]--><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Poncho delivers customizable weather forecasts daily via email and text message, helping you plan everything from your commute to your outfit. It's free!">
+
+  <title>PONCHO</title>
+  <base href="/"><!-- For $location in angular 1.3.1 -->
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Apple App Store Meta Data -->
+<!--   <meta name="apple-itunes-app" content="app-id=931625520">
+ -->
+  <!-- FB Meta data -->
+  <meta property="fb:app_id" content="247307772084085">
+  <!-- <meta property="og:url"         content="http://poncho.is" /> -->
+  <!-- commented og:url out for now so that referral / signup links will work -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Poncho">
+  <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/assets.poncho.is/static/assets/images/poncho_200x200.png">
+  <meta property="og:description" content="Poncho provides personalized weather reports every morning, tailored to your routine, delivered by email or text.">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@ponchoIRL">
+
+
+  <script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//connect.facebook.net/en_US/fbds.js"></script><script type="text/javascript" src="//use.typekit.net/nab0ipi.js"></script>
+  <style type="text/css">.tk-brandon-grotesque{font-family:"brandon-grotesque",sans-serif;}</style><style type="text/css">@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/93f90d/0000000000000000000132df/26/l?subset_id=2&fvd=n4) format("woff2");font-weight:400;font-style:normal;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/6ef9c1/0000000000000000000132e3/26/l?subset_id=2&fvd=n7) format("woff2");font-weight:700;font-style:normal;}</style><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+  <!-- Facebook Conversion Code for Post-registration pixel tracking -->
+  <script>(function() {
+   var _fbq = window._fbq || (window._fbq = []);
+   if (!_fbq.loaded) {
+     var fbds = document.createElement('script');
+     fbds.async = true;
+     fbds.src = '//connect.facebook.net/en_US/fbds.js';
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(fbds, s);
+     _fbq.loaded = true;
+   }
+  })();
+  window._fbq = window._fbq || [];
+  window._fbq.push(['track', '6018093373262', {'value':'0.00','currency':'USD'}]);
+  </script>
+  <noscript>&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6018093373262&amp;amp;cd[value]=0.00&amp;amp;cd[currency]=USD&amp;amp;noscript=1" /&gt;</noscript>
+
+
+
+    <!-- This is for Poncho tracking  -->
+<!--   <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-40185554-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      //ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script> -->
+
+
+  <!-- don't forget favicon.ico and apple-touch-icon.png in root dir -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+  </style>
+
+
+
+  <link rel="stylesheet" href="e9943471.style.css">
+
+
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body ng-app="app" class="ng-scope">
+<!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <h5>outdated</h5> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div id="wrapper"><!-- uiView: undefined --><ui-view class="ng-scope"><div class="signup ng-scope"><section class="register-hero show fname no-skip" data-form-name="fname"><weather-animation weather="partly-cloudy-day" class="ng-isolate-scope"><canvas id="weather-animation" resize="true" width="1440" height="710" style="-webkit-user-select: none; touch-action: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas></weather-animation><div class="content container"><img ng-src="img/poncho_circle.svg" src="img/poncho_circle.svg"> <img ng-src="img/poncho_logotype.svg" src="img/poncho_logotype.svg"><div class="columns eight center text dark ng-binding">Hi , I’m Poncho! Sign up for free below to get my daily forecasts, made fresh just for you.</div><div class="columns ten center"><div class="form-question"><input type="text" class="alpha columns six ng-pristine ng-untouched ng-valid" placeholder="What's your name?" ng-model="vm.cs.user.name" press-enter="vm.showErrorControlName.validate()"> <button class="omega columns four zip-button" ng-click="vm.showErrorControlName.validate()">Next</button></div><show-error class="fname-question error-message-signup ng-binding ng-isolate-scope" control="vm.showErrorControlName" model="vm.cs.user.name" validation-type="vm.validationTypeName" next="vm.jumpToSection('zipquestion')"></show-error></div></div></section><section class="zip profile-zip no-skip" id="zipquestion"><div class="content container"><div class="columns eight center text">Hi, <span class="ng-binding"></span>!<br>To personalize your updates, I need to know a little about you. First, where you at?</div><div class="columns ten center"><div class="form-question"><input type="text" class="alpha columns six ng-pristine ng-untouched ng-valid" placeholder="ZIP Code" ng-model="vm.cs.notification.weather.zipcode" press-enter="vm.goZip()"> <button class="omega columns four zip-button" ng-click="vm.goZip()">Next</button></div><show-error class="fname-question error-message-signup ng-binding ng-isolate-scope" control="vm.showErrorControlZip" model="vm.cs.notification.weather.zipcode" validation-type="vm.validationTypeZip"></show-error></div></div></section><section class="when-morning t-7 no-skip" id="morning"><canvas id="morning-time"></canvas><div class="content container"><div class="columns eight center text">When do you usually wake up?</div><choose-time templ="large" ng-model="vm.cs.notification.am_utc" next="vm.jumpToSection('pets')" class="ng-pristine ng-untouched ng-valid ng-isolate-scope"><!-- ngInclude: undefined --><ng-include src="chooseTemplate()" class="ng-scope"><div class="time-select ng-scope"><div class="hours"><div class="up-arrow" ng-click="incrementHour()"></div><div class="unit ng-binding">9</div><div class="down-arrow" ng-click="decrementHour()"></div></div><div class="colon">:</div><div class="minutes"><div class="up-arrow" ng-click="incrementMinute()"></div><div class="unit ng-binding">30</div><div class="down-arrow" ng-click="decrementMinute()"></div></div><div class="ampm ng-binding">AM</div><button ng-click="next()">Next</button></div></ng-include></choose-time></div></section><section class="pets radio-select profile-walkpet no-skip" id="pets"><div class="content container"><div class="columns eight center text">Do you have pets that need to go out?</div><div class="columns eight center yes-no"><input type="radio" id="walkpet-yes" name="profile_walkpet" ng-value="true" ng-model="vm.cs.notification.weather.with_pet" ng-click="vm.jumpToSection('allergies')" class="ng-pristine ng-untouched ng-valid" value="true"><label class="alpha columns four yes" for="walkpet-yes">yes</label><input type="radio" id="walkpet-no" name="profile_walkpet" ng-value="false" ng-model="vm.cs.notification.weather.with_pet" ng-click="vm.jumpToSection('allergies')" class="ng-pristine ng-untouched ng-valid" value="false"><label class="omega columns four no" for="walkpet-no">no</label></div></div></section><section class="allergies radio-select profile-allergy no-skip" id="allergies"><div class="content container"><div class="columns eight center text">Do you have pollen allergies?</div><div class="columns eight center yes-no"><input type="radio" id="allergy-yes" name="profile_allergy" ng-model="vm.cs.notification.weather.with_pollen" ng-click="vm.jumpToSection('hair')" ng-value="true" class="ng-pristine ng-untouched ng-valid" value="true"><label class="alpha columns four yes" for="allergy-yes">yes</label><input type="radio" id="allergy-no" ng-model="vm.cs.notification.weather.with_pollen" ng-click="vm.jumpToSection('hair')" name="profile_allergy" ng-value="false" class="ng-pristine ng-untouched ng-valid" value="false"><label class="omega columns four no" for="allergy-no">no</label></div></div></section><section class="hair radio-select profile-hairForecast no-skip" id="hair"><div class="content container"><div class="columns eight center text">Wanna know how the day will affect your hair?</div><div class="columns eight center yes-no"><input type="radio" id="hairForecast-yes" name="profile_hairForecast" ng-value="true" ng-click="vm.jumpToSection('asp')" ng-model="vm.cs.notification.weather.with_hair" class="ng-pristine ng-untouched ng-valid" value="true"><label class="alpha columns four yes" for="hairForecast-yes">yes</label><input type="radio" id="hairForecast-no" name="profile_hairForecast" ng-value="false" ng-click="vm.jumpToSection('asp')" ng-model="vm.cs.notification.weather.with_hair" class="ng-pristine ng-untouched ng-valid" value="false"><label class="omega columns four no" for="hairForecast-no">no</label></div></div></section><section class="side-parking radio-select profile-asp_flag no-skip" id="asp"><div class="content container"><div class="columns eight center text">Need alternate side parking information?</div><div class="columns eight center yes-no"><input type="radio" id="asp_flag-yes" name="profile_asp_flag" ng-value="true" ng-model="vm.cs.notification.weather.with_asp" ng-click="vm.jumpToSection('commutePage')" class="ng-pristine ng-untouched ng-valid" value="true"><label class="alpha columns four yes" for="asp_flag-yes">yes</label><input type="radio" id="asp_flag-no" name="profile_asp_flag" ng-value="false" ng-model="vm.cs.notification.weather.with_asp" ng-click="vm.jumpToSection('commutePage')" class="ng-pristine ng-untouched ng-valid" value="false"><label class="omega columns four no" for="asp_flag-no">no</label></div></div></section><section class="commute no-skip" id="commutePage"><div class="content container"><div class="columns eight center text">How do you commute?</div><div class="columns ten center commute-wrapper"><!-- ngIf: vm.cs.transit.length > 0 --><!-- TODO: Show a different, not broken commute block if no transit data --><!-- ngIf: vm.cs.transit.length == 0 --><commute-block ng-if="vm.cs.transit.length == 0" templ="signup" user-selections="vm.cs.transitPrefs" transit-options="vm.cs.transit" next="vm.jumpToSection('leaveWorkTime')" class="ng-scope ng-isolate-scope"><!-- ngInclude: undefined --><ng-include src="chooseTemplate()" class="ng-scope"><div class="commute-top ng-scope"><div class="selection-group show"><button class="metroChoice commute w" ng-class="{'selected': commuteType === 'walk'}" ng-click="setCommuteType('walk')"><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><g id="walk"><path display="inline" fill="#FFFFFF" d="M75.9,54.8c-0.6,1.3-1.9,2-3.2,2c-0.5,0-1-0.1-1.4-0.3l-11.5-5.2
+                    c-0.8-0.4-1.5-1.1-1.8-1.9L56,44.3l-2.5,12.2l5.9,9.4l2.1,2.9c0.2,0.2,0.3,0.5,0.5,0.8L69,87c0.7,1.8-0.2,3.8-2,4.5
+                    c-0.4,0.2-0.9,0.2-1.3,0.2c-1.4,0-2.7-0.8-3.2-2.2L56,73.3L43.7,61.1c0,0-3.5-2.8-2.4-7.7c0.7-2.1,2.1-8.7,3.1-14
+                    c0,0,0.1-0.5,0.2-1.3l-8,4l-6.5,9.7c-0.7,1-1.8,1.6-2.9,1.6c-0.7,0-1.3-0.2-1.9-0.6c-1.6-1.1-2-3.2-1-4.8l7-10.5
+                    c0.3-0.5,0.8-0.9,1.3-1.2l14-7c0.5-0.2,1-0.3,1.5-0.3c0,0,0.1,0,0.1,0c1,0,7,0,7,0s0,0,0,0c1.4,0,2.7,0.8,3.3,2.2L64,45.6l10.2,4.6
+                    C75.9,51,76.7,53.1,75.9,54.8z M57,25.4c4.8,0,8.7-3.9,8.7-8.7S61.8,8,57,8s-8.7,3.9-8.7,8.7S52.2,25.4,57,25.4z M40.2,61.8
+                    L37.9,73L28,86.2c-1.2,1.5-0.8,3.7,0.7,4.9c0.6,0.5,1.4,0.7,2.1,0.7c1.1,0,2.1-0.5,2.8-1.4l10.2-13.5c0.5-0.5,0.9-1.1,1-1.8
+                    l2.4-5.9l-5.6-5.6C41.3,63.2,40.6,62.5,40.2,61.8z"></path></g></svg></button> <button class="metroChoice commute b" ng-class="{'selected': commuteType === 'bike'}" ng-click="setCommuteType('bike')"><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><g id="bike"><g><path fill="#FFFFFF" d="M0,60.8c0,11.8,9.6,21.3,21.3,21.3c11.8,0,21.3-9.6,21.3-21.3c0-9.2-5.9-17.1-14.2-20.1l1.7-6.6l21.7,27.2
+                        c0,0,1,1.5,2.8,1.5s2.8,0,2.8,0c1,10.8,10.2,19.3,21.2,19.3c11.8,0,21.3-9.6,21.3-21.3s-9.6-21.3-21.3-21.3c-3.7,0-7.2,1-10.3,2.7
+                        l-5.7-8.3L66,20.3H54.1c0,0-3.6,3.1,0,4.1c2.6,0,6.6,0,6.6,0l-1.5,6.2H31.1l2.3-8.9c0,0,3.6-0.2,7.3,0c2.5-2.2,0-4.1,0-4.1H21.3
+                        c0,0-2.7,1.9,0,4.1c4.2,0,7.7,0,7.7,0l-4.5,18.1c-1-0.2-2.1-0.3-3.2-0.3C9.6,39.5,0,49.1,0,60.8z M65,44.5
+                        c-4.2,3.5-7,8.6-7.5,14.3h-0.8l4.7-19.5L65,44.5z M67.4,47.9l7.4,10.8H61.6C62.2,54.5,64.3,50.7,67.4,47.9z M61.6,62.9
+                        c0,0,13.7,0,17.3,0c3.6,0,2.6-1.6,2.6-1.6L70.8,45.6c2.4-1.2,5.1-2,7.9-2c9.5,0,17.2,7.7,17.2,17.2S88.2,78,78.7,78
+                        C69.9,78,62.7,71.4,61.6,62.9z M36,34.8h22.3l-5.2,21.5L36,34.8z M4.1,60.8c0-9.5,7.7-17.2,17.2-17.2c0.7,0,1.5,0.1,2.2,0.2
+                        l-4.2,16.5c0,0,1.4,4.3,4,1c0.8-3.3,4.2-16.5,4.2-16.5c6.4,2.5,11,8.7,11,16c0,9.5-7.7,17.2-17.2,17.2C11.8,78,4.1,70.3,4.1,60.8z
+                        "></path></g></g></svg></button> <button class="metroChoice commute d" ng-class="{'selected': commuteType === 'drive'}" ng-click="setCommuteType('drive')"><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><g id="car"><path display="inline" fill="#FFFFFF" d="M98.7,46.2L97.6,43c-0.6-1.8-2.6-3.3-4.4-3.3h-4c-3-8.5-6.7-18.8-7.8-21.2
+                c-1.7-3.7-7-5.4-10-6.3c0,0-4.9-1.9-21.4-1.9s-21.4,1.9-21.4,1.9c-3.5,1.2-8.3,2.8-10.2,6.4c-0.9,1.7-4.7,12.3-7.7,21h-4
+                c-1.8,0-3.8,1.5-4.4,3.3l-1.1,3.3c-0.6,1.8,0.3,3.3,2.1,3.3h3.9c-0.5,1.5-0.8,2.4-0.8,2.4c-0.3,0.5-0.5,3-0.5,3.6v18.5v1.3v9.9
+                c0,1.9,1.5,3.5,3.5,3.5h12.7c1.9,0,3.5-1.5,3.5-3.5v-6.3h48.9v6.3c0,1.9,1.5,3.5,3.5,3.5h12.7c1.9,0,3.5-1.5,3.5-3.5v-9.9v-1.3
+                V55.5c0-0.7-0.2-3.1-0.5-3.6c0,0-0.3-0.9-0.8-2.4h3.9C98.4,49.5,99.3,48,98.7,46.2z M25.4,64.4h-5.2c-4.7,0-9.4-0.6-9.4-3.6v-3.6
+                c0-3.5,2-3.6,4.2-3.6c2.1,0,6.3,1.8,9.1,3c3,1.4,6.4,2.5,6.4,4.7C30.6,63.5,29.4,64.4,25.4,64.4z M18.2,41
+                c2.6-10.7,5.4-16.7,6-18.4c0.5-1.2,1-5,25.8-5s25.4,4.3,25.5,4.4c0.8,2.3,3.8,9.2,6.2,19c0,0-10.5,3.6-31.7,3.6S18.2,41,18.2,41z
+                M69.4,61.4c0-2.3,3.4-3.4,6.4-4.7c2.8-1.2,7-3,9.1-3c2.2,0,4.2,0.1,4.2,3.6v3.6h0c0,3-4.7,3.6-9.4,3.6h-5.2
+                C70.6,64.4,69.4,63.5,69.4,61.4z"></path></g></svg></button> <button class="metroChoice commute s" ng-class="{'selected': commuteType === 'train'}" ng-click="setCommuteType('train')"><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><g id="train"><path display="inline" fill="#FFFFFF" d="M75.3,4.9H62.7c0-2.4-1.9-4.3-4.3-4.3s-4.3,1.9-4.3,4.3h-8.5c0-2.4-1.9-4.3-4.3-4.3
+                s-4.3,1.9-4.3,4.3H24.6c-4.8,0-8.7,3.9-8.7,8.7v67.7c0,4.8,3.9,8.7,8.7,8.7h4.7l-5.4,8.1c-0.2,0.3-0.1,0.7,0.2,0.9
+                c0.1,0.1,0.2,0.1,0.4,0.1c0.2,0,0.4-0.1,0.6-0.3l5.9-8.9H69l5.9,8.9c0.1,0.2,0.3,0.3,0.6,0.3c0.1,0,0.3,0,0.4-0.1
+                c0.3-0.2,0.4-0.6,0.2-0.9L70.6,90h4.7c4.8,0,8.7-3.9,8.7-8.7V13.6C84,8.7,80.1,4.9,75.3,4.9z M56.6,9.1c1,0,1.9,0.8,1.9,1.9v0.5
+                c0,1-0.8,1.9-1.9,1.9H43.3c-1,0-1.9-0.8-1.9-1.9V11c0-1,0.8-1.9,1.9-1.9H56.6z M30.8,81.5c-3.5,0-6.4-2.9-6.4-6.4
+                c0-3.5,2.9-6.4,6.4-6.4c3.5,0,6.4,2.9,6.4,6.4C37.2,78.6,34.3,81.5,30.8,81.5z M69.1,81.5c-3.5,0-6.4-2.9-6.4-6.4
+                c0-3.5,2.9-6.4,6.4-6.4c3.5,0,6.4,2.9,6.4,6.4C75.5,78.6,72.6,81.5,69.1,81.5z M75.5,52.3c0,2-1.6,3.7-3.7,3.7H28.1
+                c-2,0-3.7-1.6-3.7-3.7V29.8c0-2,1.6-3.7,3.7-3.7h43.7c2,0,3.7,1.6,3.7,3.7L75.5,52.3L75.5,52.3z"></path></g></svg></button></div></div><div class="metro-type-wrapper ng-scope" ng-class="{'show': commuteType === 'train'}"><div class="selection-group show"><!-- ngRepeat: (idx, carrier) in carriers --></div><div class="commute-group-wrapper" ng-class="{'show': commuteType === 'train'}"><div class="selection-group subway-types wrap" id="subTypes"><!-- ngRepeat: (idx, line) in getCarrierLines(currentCarrier) --></div><button class="commute-next" id="nextButton" ng-click="next()">next</button></div></div></ng-include></commute-block><!-- end ngIf: vm.cs.transit.length == 0 --></div></div></section><section class="when-leave t-19 no-skip" id="leaveWorkTime"><!--         <canvas id="evening-time"></canvas>
+ --><div class="content container"><div class="columns eight center text">When do you leave work?</div><choose-time templ="large" ng-model="vm.cs.notification.pm_utc" next="vm.jumpToSection('leaveWorkMessage')" class="ng-pristine ng-untouched ng-valid ng-isolate-scope"><!-- ngInclude: undefined --><ng-include src="chooseTemplate()" class="ng-scope"><div class="time-select ng-scope"><div class="hours"><div class="up-arrow" ng-click="incrementHour()"></div><div class="unit ng-binding">5</div><div class="down-arrow" ng-click="decrementHour()"></div></div><div class="colon">:</div><div class="minutes"><div class="up-arrow" ng-click="incrementMinute()"></div><div class="unit ng-binding">30</div><div class="down-arrow" ng-click="decrementMinute()"></div></div><div class="ampm ng-binding">PM</div><button ng-click="next()">Next</button></div></ng-include></choose-time></div></section><section class="leave-forecast radio-select pref-afternoon no-skip" data-form-name="pref_afternoon" id="leaveWorkMessage"><div class="content container"><div class="columns eight center text">Do you want a forecast when you leave work?</div><div class="columns eight center yes-no"><input type="radio" id="afternoon-yes" name="pref_afternoon" ng-value="true" ng-model="vm.cs.notification.do_pm" ng-click="vm.jumpToSection('deliveryPref')" class="ng-pristine ng-untouched ng-valid" value="true"><label class="alpha columns four yes" for="afternoon-yes">yes</label><input type="radio" id="afternoon-no" name="pref_afternoon" ng-value="false" ng-model="vm.cs.notification.do_pm" ng-click="vm.jumpToSection('deliveryPref')" class="ng-pristine ng-untouched ng-valid" value="false"><label class="omega columns four no" for="afternoon-no">no</label></div></div></section><section class="medium pref-delivery no-skip last" id="deliveryPref"><div class="content container"><div class="columns eight center text">Almost there!<br>Sign up and tell me where to send your forecast.<br>(I swear to God I won't spam you.)</div><div class="columns ten center medium-wrapper"><div class="selection-group show"><input type="radio" id="email-select" value="email" ng-model="vm.contactType" ng-click="vm.views.finalStep = true" class="ng-pristine ng-untouched ng-valid" name="50"><label for="email-select">email</label><input type="radio" id="text-select" ng-model="vm.contactType" value="text" ng-click="vm.views.finalStep = true" class="ng-pristine ng-untouched ng-valid" name="51"><label for="text-select">text message</label><input type="radio" id="both-select" ng-model="vm.contactType" value="both" ng-click="vm.views.finalStep = true" class="ng-pristine ng-untouched ng-valid" name="52"><label for="both-select">email &amp; text</label></div></div><div class="columns ten center"><!-- ngIf: vm.views.finalStep --></div></div></section></div></ui-view></div>
+
+<modals class="ng-isolate-scope"><div id="modal-event" class=""><div class="background" id="modal-backdrop" ng-click="close()"></div><div class="modal-wrapper fadeIn small" ng-class="modalStyle"><div class="modal sign-in small" ng-class="modalStyle" id="modal"><!--             <a href class="close-modal" ng-if="closeButton" ng-click="close()">X</a>
+ --><div ng-switch="subView"><!-- ngSwitchWhen: login --><!-- ngSwitchWhen: refer --><!-- ngSwitchWhen: email --><!-- ngSwitchWhen: reset --><!-- ngSwitchWhen: recovery --><!-- ngSwitchWhen: disable --><!-- ngSwitchWhen: launched --><!-- ngSwitchWhen: address --><!-- ngSwitchWhen: gift --><!-- ngSwitchWhen: forecast --><!-- ngSwitchWhen: promotion --><!-- ngSwitchWhen: splash --><!-- September App Launch --><!-- ngSwitchWhen: kik-launch --><!-- Unsubscribe --><!-- ngSwitchWhen: unsubscribe --><!-- Generic Alert modal - used for all alerts --><!-- ngSwitchWhen: alert --><!-- ngSwitchWhen: waitlistSuccess --><!-- ngSwitchWhen: waitlistSignup --><!-- ngSwitchWhen: loading --><!-- ngSwitchWhen: signup --><signup-modal ng-switch-when="signup" class="ng-scope ng-isolate-scope"><div class="content"><div class="app-text-modal"><div class="cellphone-image"><img ng-src="/img/cell_phone.png" src="/img/cell_phone.png"></div><!-- ngIf: !vm.justSent --><div class="phone-number-text ng-scope" ng-if="!vm.justSent"><p>Have an iPhone? I'll text you a link to my cool new app.</p><phone-number model="vm.phone_number" press-enter="vm.go()" class="ng-isolate-scope"><input ng-model="inputValue" type="text" id="phone-number" class="phonenumber ng-pristine ng-untouched ng-valid" placeholder="Phone Number"></phone-number><show-error class="error-message ng-binding ng-isolate-scope" control="vm.showErrorControlPhone" model="vm.phone_number" validation-type="vm.validationTypePhone"></show-error><button ng-click="vm.submitNumber()">Go</button></div><!-- end ngIf: !vm.justSent --><div class="no-iphone-text"><button ng-click="vm.signup()">No iPhone? You can still sign up for text and emails!</button></div></div></div></signup-modal><!-- end ngSwitchWhen: --><!-- ngSwitchWhen: iphone_only --><!-- ngSwitchWhen: android_interest --></div></div></div></div></modals>
+<loading-spinner><div id="loading-spinner-event"><div class="background ng-hide" id="loading-spinner" ng-show="isLoading"></div><div class="loading-wrapper"><div class="loading ng-hide" ng-show="isLoading"><svg width="42px" height="42px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-default"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect><rect x="46.5" y="40" width="7" height="20" rx="5" ry="5" fill="#00b2ff" transform="rotate(0 50 50) translate(0 -30)"><animate attributeName="opacity" from="1" to="0" dur="1s" begin="0s" repeatCount="indefinite"></animate></rect><rect x="46.5" y="40" width="7" height="20" rx="5" ry="5" fill="#00b2ff" transform="rotate(30 50 50) translate(0 -30)"><animate attributeName="opacity" from="1" to="0" dur="1s" begin="0.08333333333333333s" repeatCount="indefinite"></animate></rect><rect x="46.5" y="40" width="7" height="20" rx="5" ry="5" fill="#00b2ff" transform="rotate(60 50 50) translate(0 -30)"><animate attributeName="opacity" from="1" to="0" dur="1s" begin="0.16666666666666666s" repeatCount="indefinite"></animate></rect><rect x="46.5" y="40" width="7" height="20" rx="5" ry="5" fill="#00b2ff" transform="rotate(90 50 50) translate(0 -30)"><animate attributeName="opacity" from="1" to="0" dur="1s" begin="0.25s" repeatCount="indefinite"></animate></rect><rect x="46.5" y="40" width="7" height="20" rx="5" ry="5" fill="#00b2ff" transform="rotate(120 50 50) translate(0 -30)"><animate attributeName="opacity" from="1" to="0" dur="1s" begin="0.3333333333333333s" repeatCount="indefinite"></animate></rect><rect x="46.5" y="40" width="7" height="20" rx="5" ry="5" fill="#00b2ff" transform="rotate(150 50 50) translate(0 -30)"><animate attributeName="opacity" from="1" to="0" dur="1s" begin="0.4166666666666667s" repeatCount="indefinite"></animate></rect><rect x="46.5" y="40" width="7" height="20" rx="5" ry="5" fill="#00b2ff" transform="rotate(180 50 50) translate(0 -30)"><animate attributeName="opacity" from="1" to="0" dur="1s" begin="0.5s" repeatCount="indefinite"></animate></rect><rect x="46.5" y="40" width="7" height="20" rx="5" ry="5" fill="#00b2ff" transform="rotate(210 50 50) translate(0 -30)"><animate attributeName="opacity" from="1" to="0" dur="1s" begin="0.5833333333333334s" repeatCount="indefinite"></animate></rect><rect x="46.5" y="40" width="7" height="20" rx="5" ry="5" fill="#00b2ff" transform="rotate(240 50 50) translate(0 -30)"><animate attributeName="opacity" from="1" to="0" dur="1s" begin="0.6666666666666666s" repeatCount="indefinite"></animate></rect><rect x="46.5" y="40" width="7" height="20" rx="5" ry="5" fill="#00b2ff" transform="rotate(270 50 50) translate(0 -30)"><animate attributeName="opacity" from="1" to="0" dur="1s" begin="0.75s" repeatCount="indefinite"></animate></rect><rect x="46.5" y="40" width="7" height="20" rx="5" ry="5" fill="#00b2ff" transform="rotate(300 50 50) translate(0 -30)"><animate attributeName="opacity" from="1" to="0" dur="1s" begin="0.8333333333333334s" repeatCount="indefinite"></animate></rect><rect x="46.5" y="40" width="7" height="20" rx="5" ry="5" fill="#00b2ff" transform="rotate(330 50 50) translate(0 -30)"><animate attributeName="opacity" from="1" to="0" dur="1s" begin="0.9166666666666666s" repeatCount="indefinite"></animate></rect></svg><!--         <img src="img/loading.gif"><img>
+ --></div></div></div></loading-spinner>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+ <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-40185554-1', 'auto');
+
+ </script>
+
+  <!--[if lt IE 9]>
+  <script src="/bower_components/es5-shim/es5-shim.js"></script>
+  <script src="/bower_components/json3/lib/json3.min.js"></script>
+  <![endif]-->
+  <script src="app/d4151d8b.app.min.js"></script>
+
+
+</body></html>
